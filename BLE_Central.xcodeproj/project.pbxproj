@@ -15,6 +15,8 @@
 		7335896D1BBE588E00113161 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7335896C1BBE588E00113161 /* Images.xcassets */; };
 		733589701BBE588E00113161 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7335896E1BBE588E00113161 /* LaunchScreen.xib */; };
 		7335897C1BBE588F00113161 /* BLE_CentralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7335897B1BBE588F00113161 /* BLE_CentralTests.m */; };
+		733589891BBE597400113161 /* CBCMCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 733589861BBE597400113161 /* CBCMCtrl.m */; };
+		7335898A1BBE597400113161 /* CBCPCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 733589881BBE597400113161 /* CBCPCtrl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		733589751BBE588E00113161 /* BLE_CentralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLE_CentralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7335897A1BBE588F00113161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7335897B1BBE588F00113161 /* BLE_CentralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLE_CentralTests.m; sourceTree = "<group>"; };
+		733589851BBE597400113161 /* CBCMCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCMCtrl.h; sourceTree = "<group>"; };
+		733589861BBE597400113161 /* CBCMCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCMCtrl.m; sourceTree = "<group>"; };
+		733589871BBE597400113161 /* CBCPCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCPCtrl.h; sourceTree = "<group>"; };
+		733589881BBE597400113161 /* CBCPCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCPCtrl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 		7335895B1BBE588E00113161 /* BLE_Central */ = {
 			isa = PBXGroup;
 			children = (
+				733589851BBE597400113161 /* CBCMCtrl.h */,
+				733589861BBE597400113161 /* CBCMCtrl.m */,
+				733589871BBE597400113161 /* CBCPCtrl.h */,
+				733589881BBE597400113161 /* CBCPCtrl.m */,
 				733589601BBE588E00113161 /* AppDelegate.h */,
 				733589611BBE588E00113161 /* AppDelegate.m */,
 				733589661BBE588E00113161 /* ViewController.h */,
@@ -222,8 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7335898A1BBE597400113161 /* CBCPCtrl.m in Sources */,
 				733589651BBE588E00113161 /* BLE_Central.xcdatamodeld in Sources */,
 				733589621BBE588E00113161 /* AppDelegate.m in Sources */,
+				733589891BBE597400113161 /* CBCMCtrl.m in Sources */,
 				733589681BBE588E00113161 /* ViewController.m in Sources */,
 				7335895F1BBE588E00113161 /* main.m in Sources */,
 			);
@@ -303,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -341,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BLE_Central/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -364,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BLE_Central/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -422,6 +436,7 @@
 				733589811BBE588F00113161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		733589821BBE588F00113161 /* Build configuration list for PBXNativeTarget "BLE_CentralTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +445,7 @@
 				733589841BBE588F00113161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
